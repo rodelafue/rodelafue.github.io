@@ -451,17 +451,17 @@ img.animated-gif{
   
 .event-date {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .event-name {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
   color: black
 }
 
 .event-description {
-  font-size: 18px;
+  font-size: 15px;
   color: #757575;
 }
 /*FIN RODRIGO*/
