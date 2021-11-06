@@ -906,19 +906,16 @@
 																<center>
 																<img src="images/Research/MachineLearning/ROCSuscepMap.PNG" width="400" height="121" alt="" class="img-fluid">
 																</center>
-																<p> Over the last few years wildfires have increased in frequency and intensity all around the world. Wildfire susceptibility mapping with machine learning has been proven useful 
-																	for fire-prevention plans, turning into an indispensable tool in wildfire prevention. In this project we demonstrate that an Ensemble 
-																	model, based on two deep learning networks previously presented in literature, can achieved remarkable results 
-																	for forest fire susceptibility. Our model was trained on data of fire occurrences in two regions in Chile, from 2013 to 2019. Satellite 
-																	imagery data for fifteen fire influencing factors in the study area were retrieved to build a dataset to extract the 
-																	samples to train the models. These factors include elevation, aspect, surface roughness, slope, minimum and 
-																	maximum temperature, wind speed, precipitation, actual evapotranspiration, climatic water deficit, NDVI, land 
-																	cover type, distance to rivers, distance to roads and distance to urban areas. During training, the best sample 
-																	patch size was found to be 25 × 25 pixels and the highest area under the curve (AUC) for the Ensemble model was 0.953. The Ensemble model also achieved the best 
-																	accuracy, sensitivity, specificity, negative predictive value and F1 score. Finally, the predicted susceptibility 
-																	maps suggest that static variables can be considered as predisposing factors, while dynamic variables affect the 
-																	intensity of the predicted probabilities, with an important role of the anthropogenic variables. A complete description of this project 
-																	can be found in <a href="https://doi.org/10.1016/j.ecoinf.2021.101397">Ecological Informatics</a>.
+																<p> Over the last few years, wildfires have increased in frequency and intensity all around the world. Wildfire susceptibility mapping with machine learning has 
+																been proven useful for fire-prevention plans, turning into an indispensable tool in wildfire prevention. In this project, we demonstrate that an Ensemble model, 
+																based on two deep learning networks previously presented in the literature, can achieve remarkable results for forest fire susceptibility. Our model was trained on
+																fire data occurrences in two regions in Chile, from 2013 to 2019. Satellite imagery data for fifteen fire-influencing factors in the study area were retrieved to 
+																build a dataset to extract the samples to train the models. These factors include elevation, aspect, surface roughness, slope, minimum and maximum temperature, wind speed,
+																precipitation, actual evapotranspiration, climatic water deficit, NDVI, land cover type, distance to rivers, distance to roads, and distance to urban areas. During training, 
+																the best sample patch size was 25 × 25 pixels, and the highest area under the curve (AUC) for the Ensemble model was 0.953. Besides, the Ensemble model achieved the best 
+																accuracy, sensitivity, specificity, negative predictive value, and F1 score. Finally, the predicted susceptibility maps suggest that static variables can be considered
+																as predisposing factors, whereas dynamic variables affect the intensity of the predicted probabilities, with an important role of the anthropogenic variables. A complete
+																description of this project can be found in <a href="https://doi.org/10.1016/j.ecoinf.2021.101397">Ecological Informatics</a>.
 																</p>
 																<center>
 																<img src="images/Research/MachineLearning/SusceptibilityMap.PNG" width="400" height="121" alt="" class="img-fluid">
@@ -953,29 +950,18 @@
 																<center>
 																<img src="images/Research/MachineLearning/BAXTERoverall.PNG" width="400" height="121" alt="" class="img-fluid">
 																</center>
-																<p> In this project we taught the Baxter robot to first identify and then
-																	sort some elements. My student (Felipe Sepulved) and I experienced first hand 
-																	that trivial tasks for humans are still significant challenges for
-																	machines. For this reason, we
-																	implemented two independent object detectors, one per arm,
-																	in the Baxter Robot. On its
-																	left hand, a shape detector is implemented with data generated using the theory of complex contour analysis.
-																	With the resulting data we trained both a Gradient
-																	Boosting Classifier and a Multilayer Perceptron Classifier. Now, the right hand, was taught to distinguish colors and the dataset
-																	was generated using the back-projection theory, and a 
-																	K-Means algorithm was used for learning. In our physical experiments Baxter
-																	observes a collection of objects, randomly positioned within a search
-																	space, with the aim it should be able identify not only the aforementioned space but also recognize each of
-																	the objects, deposit them in their corresponding containers, and
-																	ignore those that do not possess the properties sought.<br><br> The Gradient Boosting
-																	Classifier  gave the best performance on the left hand of the robot, with an f1-score of 94.65
-																	% over a validation set of 925 images. For the color detector (right hand), a
-																	silhouette coefficient of 91.68 % shows that K-Means requires
-																	a total of 3 clusters over 654 training images. Moreover, because of the theories behind the data generation process, shape features
-																	the features are invariant to rotations, translations, and scaling, while color
-																	features are robust to illumination variations. Unknown objects
-																	are ignored using properties of the proposed features; thereby there is no  
-																	need to add more data to account for unobserved classes during the training process.</p>
+																<p> In this project, we taught the Baxter robot to identify and sort some elements. My student (Felipe Sepulveda) and I experienced firsthand 
+																that trivial tasks for humans are still significant challenges for machines. For this reason, we implemented two independent object detectors 
+																in the robot. On its left hand, we trained two shape detectors, a Gradient Boosting Classifier and a Multilayer Perceptron Classifier, with data
+																generated using the theory of complex contour analysis. Then, we taught the right hand to use a K-Means algorithm to distinguish colors in a 
+																dataset generated using the back-projection theory. In our physical experiments, Baxter observes a collection of objects, randomly positioned 
+																within a search space, with the aim of identifying not only the aforementioned space but also recognizing each of the objects to deposit them 
+																in their corresponding containers and ignore those that do not possess the properties sought. The Gradient Boosting Classifier gave the best 
+																performance on the left hand of the robot, with an f1-score of 94.65 % over a validation set of 925 images. For the color detector (right hand), 
+																a silhouette coefficient of 91.68 % shows that K-Means requires a total of 3 clusters over 654 training images. Moreover, because of the theories
+																behind the data generation process, shape features are invariant to rotations, translations, and scaling, while color features are robust to
+																illumination variations. Unknown objects are ignored using properties of the proposed features; thereby, there is no need to add more data to 
+																account for unobserved classes during the training process.</p>
 																<center>
 																<img src="images/Research/MachineLearning/BAXTERtools.PNG" width="400" height="121" alt="" class="img-fluid">
 																</center>
@@ -1013,18 +999,15 @@
 																<img src="images/Research/MachineLearning/DCM_TT.PNG" width="400" height="121" alt="" class="img-fluid">
 																</center>
 																<p>
-																	In this project we explore the opportunity of using Machine Learning algorithms to model travel mode choice. Currently, the multinomial logit (MNL) 
-																	and the mixed multinomial logit (MMNL) model are the most popular algorithms to model the problem. However,
-																    machine learning (ML) methods have begun to gain ground in the transportation field, showing a high predictive
-																	power that surpasses logit models. In general, studies comparing machine learning methods and logit models
-																	mainly focus on predictive accuracy, while others –to a lesser extent– focus on post-hoc explanation analysis. 
-																	A differencing element of this works was that we shed light on the explanation capability of ML models by computing the effect of different variables not only on the overall
-																	prediction but also on the prediction of different choice alternatives using an agnostic-model method.
-																	We also present an empirical application using four mode choice datasets where our results show that Neural Networks
-																	generally perform better than other models in terms of accuracy and interpretation. Moreover, we emphasize the importance
-																	of analyzing the equivalence between the models in order to complement the explanations obtained through the two
-																	approaches to support management decision making and to better understand the factors
-																	that determine people’s travel behavior.
+																	In this project, we explore the opportunity of using Machine Learning algorithms to model travel mode choice. Currently, the multinomial logit (MNL) 
+																	and the mixed multinomial logit (MMNL) model are the most popular algorithms to model the problem. However, machine learning (ML) methods have begun 
+																	to gain ground in the transportation field, showing a high predictive power that surpasses logit models. In general, studies comparing machine learning
+																	methods and logit models mainly focus on predictive accuracy, while others –to a lesser extent– focus on post-hoc explanation analysis. A differencing 
+																	element of this works was that we shed light on the explanation capability of ML models by computing the effect of different variables not only on the
+																	overall prediction but also on the prediction of different choice alternatives using an agnostic-model method. We also present several empirical 
+																	applications using four different mode choice datasets where our results show that Neural Networks generally perform better than other models in terms
+																	of accuracy and interpretation. Moreover, we emphasize the importance of analyzing the equivalence between the models in order to complement the 
+																	explanations obtained through the two approaches to support management decision-making and to better understand the factors that determine people’s travel behavior.
 																</p>
 																<center>
 																<img src="images/Research/MachineLearning/DCMfeatureImportance.PNG" width="400" height="121" alt="" class="img-fluid">
@@ -1059,17 +1042,12 @@
 																<center>
 																<img src="images/Research/MachineLearning/SOMPieChart.PNG" width="400" height="121" alt="" class="img-fluid">
 																</center>
-																<p style="margin-top: 50px; margin-bottom: 50px;"> This work presents a methodology for the segmentation and visualization of academic information of first–
-																	year students enrolled in the college of engineering at the Universidad de Concepción, Chile. By using machine
-																	learning techniques and visualization algorithms, we show that students coming from high performance secondary schools have better chances of academic survival during their first year. Besides, they tend to choose either Chemical,
-																	Industrial, Civil, or Mechanical Engineering. Conversely, students coming from the worst performing groups,
-																	comprised mainly of public schools, enroll in Telecommunications and Materials Science Engineering. 
-																	We use Self–Organizing Maps to generate a non–linear projection to a two–dimensional
-																	space spanned by the students’ academic records. Then, students are clustered applying the k-means algorithm on the resulting projection. Next, we use the Local Interpretable Model–agnostic Explanation (LIME) algorithm to
-																	determine the relative contribution of the explanatory variables on each cluster. After
-																	that, the clusters are geo–spatially projected to observe patterns among schools and network visualizations
-																	are generated to understand the flow dynamics from high–schools to the programs offered by the
-																	College of Engineering. Finally, we use the Squarified Treemap Algorithm to analyze the clusters' schools composition over time.
+																<p style="margin-top: 50px; margin-bottom: 50px;"> This work presents a methodology for the segmentation and visualization of academic information of first-year students using machine learning techniques and visualization 
+																algorithms. We show that students from high-performance secondary schools have better chances of academic survival during their first year. Besides, they tend to choose either Chemical, Industrial, Civil, or Mechanical Engineering.
+																Conversely, students from the worst-performing groups, comprised mainly of public high schools, enroll in Telecommunications and Materials Science Engineering. We use Self–Organizing Maps to generate a non–linear projection to
+																a two–dimensional space spanned by the students’ academic records. Then, we clustered students applying the k-means algorithm on the resulting projection. Next, we use the Local Interpretable Model–agnostic Explanation (LIME) 
+																algorithm to determine the relative contribution of the explanatory variables on each cluster. After that, we geospatially project the clusters to observe patterns among high schools and generate network visualizations to understand
+																the flow dynamics to the programs offered by the College of Engineering at the University of Concepcion. Finally, we use the Squarified Treemap Algorithm to analyze the clusters' composition over time.
 																</p>
 																<center>
 																<img src="images/Research/MachineLearning/SOMNetwork.PNG" width="400" height="121" alt="" class="img-fluid">
@@ -1104,18 +1082,13 @@
 																<center>
 																<img src="images/Research/MachineLearning/ChipsTerrain.PNG" width="400" height="121" alt="" class="img-fluid">
 																</center>
-																<p>This work shows how modern machine learning techniques can be used to solve current problems faced by 
-																	the forestry industry. More specifically, we compare the predictive performance of several 
-																	algorithms on estimating the dry weight, in tons, of chip residues. The dataset contains samples obtained 
-																	during 22 months from 220 trucks coming from 17 different farms located within the area spanned by the 
-																	Bio-bío and Maule regions, Chile. Once the trucks arrived at each power plant, samples were collected and dried to compute the 
-																	dry tons carried by each truck, which was set as the dependent variable. Using open-source software 
-																	implementations of state-of-the-art algorithms it was possible to determine, for our data, that even though 
-																	the non-parametric models Gradient Boosting Machines (GBM) and Neural Networks (NNET) outperformed 
-																	the linear regression (LM) model, they are not statistically superior to the LASSO regression (GLMNET), an 
-																	improved version of the LM model. Additionally, it was observed that seasonality affects the ratio of green 
-																	tons to dry tons a truck can deliver to a power plant during the year. Finally, the continuous variables green 
-																	tons, elevation, east and north (longitude-latitude) also contribute to explaining the dependent variable. We published
+																<p>This work shows the use of modern machine learning techniques to solve current problems faced by the forestry industry. More specifically, we compare the predictive
+																performance of several algorithms on estimating the dry weight, in tons, of chip residues. The dataset contains samples obtained over 22 months from 220 trucks from 
+																17 farms within the area spanned by the Bio-bío and Maule regions, Chile. Once the trucks arrived at each power plant, samples were collected and dried to compute the
+																dry tons, set as the dependent variable. Using open-source software implementations of state-of-the-art algorithms we determined, for our data, that the non-parametric 
+																models Gradient Boosting Machines (GBM) and Neural Networks (NNET) are not statistically superior to the LASSO regression (GLMNET), a penalized version of the Linear
+																Regression model. Additionally, we observed that seasonality affects the ratio of green tons to dry tons a truck can deliver to a power plant during the year. 
+																Finally, the continuous variables green tons, elevation, east and north (longitude-latitude) also contribute to explaining the dependent variable. We published
 																	this work in the <a href="https://doi.org/10.1080/14942119.2021.1892415">International Journal of Forest Engineering</a>.
 																</p>
 																<center>
@@ -1166,15 +1139,16 @@
 																	</div>
 																</center>
 																<p>
-																Here we had the challenge of finding a relationship among several oceanographic variables
-																and fish catch sizes that could lead to good fishing zones. We downloaded satellite imagery (from <a href="https://www.copernicus.eu/en">Copernicus</a>)
-																such as seawater velocity and direction, sea surface temperature, plakton concentration, sea height and salinity. 
-																With this information we could visualize ocean currents which fishes use as real "highways" during their migration process, being 
-																the Humbolt and the Gunther currents the most relevant for our study. With the collected information we also
-																identified places were the sea surface temperature changed abruptly. Finally, using a clustering algorithm
-																we could observe that faster current velocities occur at zones were sea surface temperature change. 
-																Interestingly, when we mapped the movement of fishing boats we observed that Captains tend to sail to exactly
-																the same areas where the aforementioned phenomena occurs.
+																	Here we had the challenge of finding a relationship among several oceanographic variables and fish
+																	catch sizes that could lead a fishing fleet to good fishing zones. We downloaded satellite imagery 
+																	(from <a href="https://www.copernicus.eu/en">Copernicus</a>) such as seawater velocity and direction,
+																	sea surface temperature, plankton concentration, sea height, and salinity. With this information we 
+																	could visualize ocean currents that fishes use as "highways" during their migration process, being 
+																	the Humbolt and the Gunther currents the most relevant for our study. With the collected information 
+																	we also identified places where the sea surface temperature changed abruptly. Finally, using a 
+																	clustering algorithm we could observe that faster current velocities occur at zones where sea surface 
+																	temperature changes. Interestingly, when we mapped the movement of fishing boats we observed that Captains 
+																	tend to sail to exactly the same areas where the aforementioned phenomena occur.
 																</p>
 																<center>
 																	<div class="embed-responsive embed-responsive-16by9">
@@ -1212,22 +1186,17 @@
 																<center>
 																<img src="images/Research/GIS/SyntheticPopulation/descripcion_problema1.png" width="400" height="121" alt="" class="img-fluid">
 																</center>
-																<p> This project is quite interesting because we created a reliable and granular synthetic population to serve as an input for
-																	microsimulations of social dynamics. In our case, Chile releases 
-																	anonymized data, at the 5-zip area code level, of each individual (18 million records approx.),
-																	but the contry also provides marginalized information at the block level. Then, the problem can be seen as a particular instance of the
-																	generalized assigment problem. Based on this, we implemented a mixed integer programming model 
-																	that takes advantage of the particularity of the
-																	data to generate a synthetic population. The
-																	model relies on slack variables to achieve a feasible association between the disaggregated and
-																	aggregated data mismatches with the purpose of finding an optimal fit that reproduces
-																	the underlying structure of the real population, as close as possible. It does it by assigning households to each of the blocks within a census
-																	area (5-zip area code). Likewise, cartographic data was used to generate Lon-Lat coordinates
-																	of all households and individuals within their respective blocks. As
-																	a case study, the Province of Concepción, Chile, was selected. The results were
-																	compared with an heuristic proposed in the literature, showing that our model is
-																	superior in fitting the population at the category and area level. Furthermore, the proposed model will finds the optimal solution when consistent and adjusted data
-																	are available, but when having mismatched data the assignment will not be optimal but it will remain significant from an statistical viewpoint.	
+																<p> This project is quite interesting because we created a reliable and granular synthetic population to serve as an input for microsimulations
+																of social dynamics. In our case, Chile releases anonymized data, at the 5-zip area code level, of each individual (18 million records approx.), 
+																but the country also provides marginalized information at the block level. Then, the problem can be seen as a particular instance of the generalized 
+																assignment problem. Based on this, we implemented a mixed-integer programming model that takes advantage of the particularity of the data to generate
+																a synthetic population. The model relies on slack variables to achieve a feasible association between the disaggregated and aggregated data 
+																mismatches with the purpose of finding an optimal fit that reproduces the underlying structure of the real population, as close as possible. It does it 
+																by assigning households to each of the blocks within a census area (5-zip area code). Likewise, cartographic data was used to generate Lon-Lat coordinates
+																of all households and individuals within their respective blocks. As a case study, the Province of Concepción, Chile, was selected. The results were 
+																compared with a heuristic proposed in the literature, showing that our model is superior in fitting the population at the category and area level.
+																Furthermore, the proposed model will find the optimal solution when consistent and adjusted data are available, but when having mismatched data the assignment 
+																will not be optimal but it will remain significant from a statistical viewpoint. 
 																</p>
 																<center>
 																<img src="images/Research/GIS/SyntheticPopulation/solution1.jpg" width="400" height="121" alt="" class="img-fluid">
