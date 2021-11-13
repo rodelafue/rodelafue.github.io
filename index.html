@@ -473,7 +473,7 @@
 				<div class="d-flex justify-content-center align-items-center">
 					<div class="col-md-8 text text-center">
 						<div class="desc">
-							<p class="mb-4  ">My research interests integrate techniques from different fields, and instead of falling on the idea of "not invented here" I take advantage of technology already 
+							<p class="mb-4"> My research interests integrate techniques from different fields, and instead of falling on the misbelief of "not invented here" I take advantage of technology already 
 							invented somewhere else. I am especially interested in applying those concepts in various industrial engineering environments, most specifically simulation and operations. I have
 							always been intrigued with how algorithms work and how I could improve them. My current research is a blend of different topics because, from my perspective, there is no silver bullet
 							to tackle large-scale problems. Thereby, I mix concepts from diverse fields of knowledge to approach the problem at hand. Below I have organized some of my research projects into four general topics.
@@ -496,6 +496,10 @@
 								<li>Real-time ambulance redeployment in NYC with workload balance constraints <a data-toggle="modal" href="#simulation3"><span>[link]</span></a></li>
 								<li>Food delivery for high-schoolers during COVID-19 times <a data-toggle="modal" href="#simulation4"><span>[link]</span></a></li>
 								<li>Tsunami Evacuation in Antofagasta using a syntethic population and GIS data <a data-toggle="modal" href="#simulation5"><span>[link]</span></a></li>
+								<li>Simulation and balancing of a vehicle sharing system
+									using reinforcement learning with a user-based
+									approach <a data-toggle="modal" href="#simulation6"><span>[link]</span></a></li>
+
 							</ul>	
 							</nav>
 							<div class="modal fade" id="simulation1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -650,7 +654,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div>							
 							<div class="modal fade" id="simulation4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 								<div class="modal-dialog modal-lg" role="document">
 									<div class="modal-content">
@@ -719,6 +723,50 @@
 																<iframe width="420" height="345" src="https://www.youtube.com/embed/0eghEN_Ek94">
 																</iframe>
 																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="simulation6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											  <span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="text pt-2 mt-3">																						
+												<div class="container">
+													<div class="row justify-content-center mb-4 pb-2">
+														<div class="col-md-12 heading-section text-left">
+															<h2 class="mb-4">Simulation and balancing of a vehicle sharing system
+																using reinforcement learning with a user-based
+																approach</h2>
+															<div class="col-md-11">
+																<center>
+																<img src="images/Research/Simulation/multinomialNet.JPG" width="500" height="auto" alt="" class="img-fluid">
+																</center>
+																<p> Vehicle sharing systems are a new mode of transportation that has spread worldwide widely. Bike-sharing and scooter-sharing appear as solutions to the last-mile problem and environmentally 
+																friendly alternatives to private cars. However, due to asymmetry of demand, these systems tend to suffer severe unbalance. In this work, we develop a realistic discrete-event simulator designed
+																to test a user based rebalancing strategy using a reinforcement learning approach. We modeled the Spatio-temporal behaviour of a vehicle-sharing system by combining an inhomogeneous Poisson 
+																process, a Spatio-temporal Kernel Density Estimator and a conditional Kernel Density Estimator. Next, we use our simulator to train a reinforcement-learning algorithm called Hierarchical
+																Reinforcement Pricing (HRP), which aims to rebalance the system by giving price incentives to users to influence users’ route trips. It is worth mentioning that HRP was initially proposed
+																for bike-sharing systems. Our results suggest that the HRP algorithm does not perform well in such a stochastic environment, reaching a Decrease Service Ratio (DUR) of 12% on average under
+																a maximum incentive of 3$. Although part of the problem is due to the poor performance of reinforcement learning algorithms in stochastic environments, the differences in users' behaviour
+																compared to bike-sharing systems are also critical. Several improvements could be made to enhance the performance of HRP, using the advances in continuous control tasks. Finally, our simulator
+																could be used as a basis to test reinforcement-learning user-based strategies under realistic scenarios. A visualization of our model can be found at <a href="https://scespinoza.github.io/projects/ridesharing/">this link</a></p>
+																<center>
+																	<img src="images/Research/Simulation/ArrivalRates.JPG" width="500" height="auto" alt="" class="img-fluid">
+																</center>
 															</div>
 														</div>
 													</div>
