@@ -189,3 +189,24 @@
 
 })(jQuery);
 
+$(document).ready(function() {
+    var sections = $("div[id], section[id]"); // Select divs and sections with an id
+    var navLinks = $("ul li a");
+
+    $(window).on("scroll", function() {
+        var currentPosition = $(this).scrollTop();
+
+        sections.each(function() {
+            var top = $(this).offset().top - 100;  // Adjust offset as needed
+            var bottom = top + $(this).outerHeight();
+
+            if (currentPosition >= top && currentPosition <= bottom) {
+                var id = $(this).attr("id");
+                navLinks.removeClass("active");
+                $('ul li a[href="#' + id + '"]').addClass("active");
+            }
+        });
+    });
+});
+
+
