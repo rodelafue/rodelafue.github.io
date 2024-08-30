@@ -8864,6 +8864,19 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* Default link style */
+ul li a {
+  color: #000; /* Set your default link color */
+  text-decoration: none;
+}
+
+/* Active link style */
+ul li a.active {
+  color: #ff5733; /* Change this to the color you want when the section is active */
+  font-weight: bold; /* Optional: Makes the active link bold */
+}
+
 /*   
 * {
   background: #000 !important;
